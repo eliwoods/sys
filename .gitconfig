@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[core]
+    commentchar = @
+[diff]
+    colorMoved = zebra
+[fetch]
+    prune = true
+[pull]
+    rebase = true
+[push]
+    default = current
+[user]
+	name = Eli Woods
+    email = eli@recentiveanalytics.com
