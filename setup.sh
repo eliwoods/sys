@@ -3,14 +3,14 @@
 INSTALL_DIR="${HOME}"/.install
 if [ -d "${INSTALL_DIR}" ]; then
     echo "Warning, install directory already exists and files may be overwritten"
-   	read -p "Do you want to continue [y/N]? " -r
-	if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    read -p "Do you want to continue [y/N]? " -r
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
         echo "Exiting setup"
-		[[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
-	fi
+        [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+    fi
     echo "Proceeding with install"
 else
-	mkdir -p "${INSTALL_DIR}"
+    mkdir -p "${INSTALL_DIR}"
 fi
 
 # Install homebrew if not installed
